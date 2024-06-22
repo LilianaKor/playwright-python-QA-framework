@@ -9,7 +9,7 @@ async def main():
         await context.tracing.start(screenshots=True, snapshots=True, sources=True)
         page = await context.new_page()
         
-        await page.set_viewport_size({"width": 1800, "height": 1200})
+        await page.set_viewport_size({"width": 1400, "height": 1100})
         await page.goto("https://demoqa.com/checkbox")
         #-Actions
         await page.check('label[for="tree-node-home"]')
