@@ -1,8 +1,8 @@
-
-#Extracted from: https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-get
+# Extracted from: https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-get
 
 import asyncio
 from playwright.async_api import async_playwright, Playwright
+
 
 async def run(playwright: Playwright):
     # This will launch a new browser, create a context and page. When making HTTP
@@ -29,8 +29,10 @@ async def run(playwright: Playwright):
     assert response.ok
     print(f"todo Var: {response}")
 
+
 async def main():
     async with async_playwright() as playwright:
         await run(playwright)
+
 
 asyncio.run(main())
